@@ -4,9 +4,9 @@ This repository shows the use of three distinct TSC algorithms on the [UCI-HAR d
 
 ## Dataset
 
-- Data was collected using a cellphone attached to the waists of test subjects.  Each person performs 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+- Data was collected using a cellphone attached to the waists of test subjects.  Each person performs 6 activities (walking, walking upstairs, walking downstairs, sitting, standing, laying) 
 - Data consists of  3-axial linear acceleration and 3-axial angular velocity  collected at a constant rate of 50Hz using  the embedded accelerometer and gyroscope of the phone.
-- To process training data from raw data , follow the instructions [here](https://machinelearningmastery.com/how-to-develop-rnn-models-for-human-activity-recognition-time-series-classification/)
+- To download and process training data from raw data , follow the instructions [here](https://machinelearningmastery.com/how-to-develop-rnn-models-for-human-activity-recognition-time-series-classification/). I've already done that and saved it as .npz file.
 
 ![HAR-class-dist](./pics/HAR-class-dist.png)
 

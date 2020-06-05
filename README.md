@@ -2,7 +2,7 @@
 
 This repository shows the use of three distinct TSC algorithms on the [UCI-HAR dataset](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones). I've experimented with many different architectures and different means to interface CNNs with LSTMs. The working examples here should help you get started without a hassle and serve as good starting points.
 
-## Dateset
+## Dataset
 
 - Data was collected using a cellphone attached to the waists of test subjects.  Each person performs 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
 - Data consists of  3-axial linear acceleration and 3-axial angular velocity  collected at a constant rate of 50Hz using  the embedded accelerometer and gyroscope of the phone.

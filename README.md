@@ -14,7 +14,7 @@ This repository shows the use of three distinct TSC algorithms on the [UCI-HAR d
 InceptionTime [2] uses 1D convolutions similar to CNNs used for image classification.
 ![models](./pics/models1.png)
 
-Parallel CNN-LSTM uses CNN layers and an attention LSTM layer in parallel [3]. This is in contrast to common serial CNN LSTM architectures, where CNNs are used to encode features and the LSTM layer is used to model long-term dependencies of the features across time. The authors in [3] shuffle operation before the attention LSTM layer for computational efficiency. Global temporal information of each feature is fed ti LSTM at once. Serial CNN LSTM uses temporal convolutional networks as the CNN layers, which incorporate dilated causal convolutions to increase the receptive field of the CNN layers[4]. 
+Parallel CNN-LSTM uses CNN layers and an attention LSTM layer in parallel [3]. This is in contrast to common serial CNN LSTM architectures, where CNNs are used to encode features and the LSTM layer is used to model long-term dependencies of the features across time. The authors in [3] use shuffle operation before the attention LSTM layer for computational efficiency. This enables global temporal information of each feature to be fed to the LSTM layer at once. Serial CNN LSTM uses temporal convolutional networks (TCN) as the CNN layers, which incorporate dilated causal convolutions to increase the receptive field of the CNN layers[4]. 
 
 
 

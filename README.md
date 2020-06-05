@@ -6,7 +6,7 @@ This repository shows the use of three different TSC algorithms on the [UCI-HAR 
 
 - Data was collected using a cellphone attached to the waists of test subjects.  Each person performs 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
 - Data consists of  3-axial linear acceleration and 3-axial angular velocity  collected at a constant rate of 50Hz using  the embedded accelerometer and gyroscope of the phone.
-- To process training data from raw data , follow instructions [here](https://machinelearningmastery.com/how-to-develop-rnn-models-for-human-activity-recognition-time-series-classification/)
+- To process training data from raw data , follow the instructions [here](https://machinelearningmastery.com/how-to-develop-rnn-models-for-human-activity-recognition-time-series-classification/)
 
 ![HAR-class-dist](./pics/HAR-class-dist.png)
 
@@ -14,8 +14,7 @@ This repository shows the use of three different TSC algorithms on the [UCI-HAR 
 InceptionTime [2] uses 1D convolutions similar to CNNs used for image classification.
 ![models](./pics/models1.png)
 
-Parallel CNN-LSTM uses CNN layers and an attention LSTM layer in parallel [3]. This is in contrast to common serial CNN LSTM architectures, where CNNs are used to encode features and the LSTM layer is used to model long-term dependencies of the features across time. The authors in [3] shuffle operation before the attention LSTM layer for computational efficiency. Global temporal information of each feature is fed ti LSTM at once.
-Serial CNN LSTM uses temporal convolutional networks as the CNN layers, which incorporate dilated causal convolutions to increase the receptive field of the CNN layers[4]. 
+Parallel CNN-LSTM uses CNN layers and an attention LSTM layer in parallel [3]. This is in contrast to common serial CNN LSTM architectures, where CNNs are used to encode features and the LSTM layer is used to model long-term dependencies of the features across time. The authors in [3] shuffle operation before the attention LSTM layer for computational efficiency. Global temporal information of each feature is fed ti LSTM at once. Serial CNN LSTM uses temporal convolutional networks as the CNN layers, which incorporate dilated causal convolutions to increase the receptive field of the CNN layers[4]. 
 
 
 
@@ -36,7 +35,9 @@ You can directly run the scripts below:
 **/data**
 
 - UCI_HAR.npz
+
    -data['features']: number of windows,samples per window, number of features
+   
    -data['labels'] :  class label per window
 
 
@@ -44,7 +45,7 @@ You can directly run the scripts below:
 
 Tested on ubuntu 18.04
 * conda 4.8.3
-* Keras 2.3.1
+* keras 2.3.1
 * tensorflow 1.14.0
 * pydot 1.4.1
 

@@ -26,10 +26,9 @@ Networks that incorporate LSTM layers train substantially slower. Parallel LSTM 
 
 ## Files
 
-You can directly run the scripts below:
-
 **/models**
 
+You can directly run the scripts below:
 - Parallel_CNNLSTM_SA.py
 - Serial_CNNLSTM_SA.py
 - InceptionTime_SA.py

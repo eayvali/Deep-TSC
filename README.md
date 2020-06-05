@@ -1,6 +1,6 @@
 # Deep-TSC: Multivariate Time Series Classification
 
-This repository shows the use of three distinct TSC algorithms on the [UCI-HAR dataset](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones). I've experimented with many different architectures and different means to interface CNNs with LSTMs. The working examples here should serve as a good point to get started without any hassle.
+This repository shows the use of three distinct TSC algorithms on the [UCI-HAR dataset](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones). I've experimented with many different architectures and different means to interface CNNs with LSTMs. The working examples here should help you get started without a hassle and serve as good starting points.
 
 ## Dateset
 
@@ -20,7 +20,8 @@ Parallel CNN-LSTM uses CNN layers and an attention LSTM layer in parallel [3]. T
 
 ![models](./pics/models2.png)
 
-Networks that incorporate LSTM layers train substantially slower. Parallel LSTM CNN performs the best the data sets I've experimented with and is a good starting point to tailor the architecture to your needs.
+Networks that incorporate LSTM layers train substantially slower. Parallel LSTM CNN performs the best the data sets I've experimented with and is a good starting point to tailor the architecture to your needs. 
+
 > Note: Using class_weights changes the range of the loss. This may affect the stability of the training depending on the optimizer. Optimizers whose step size is dependent on the magnitude of the gradient, like optimizers.SGD, may fail. The optimizer used here, optimizers.Adam, is unaffected by the scaling change. Also note that because of the weighting, the total losses are not comparable between the two models.
 
 ## Files
